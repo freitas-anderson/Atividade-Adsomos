@@ -200,135 +200,72 @@ header {
 }
 
 
-.slider{
-    margin: 0 auto;
+.carossel{
+    max-width: 500px;
     width: 800px;
-    height: 400px;
+    height: 570;
+    margin: 20px auto;
     overflow: hidden;
 }
-.slides{
-    width: 400%;
-    height: 400px;
+.container{
     display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
 }
-.slides input{
-    display: none;
+.container img{
+    flex: 0 0 auto;
+    width: 100%;
+
+    
 }
-.slide{
-    width: 25%;
-    position: relative;
+@medi screen and (max-width: 768px;){
+    .carossel{
+        max-width: 90%;
+    }
 }
 
-.slide img{
-    width: 800px;
-}
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-.manual-btn{
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-.manual-btn:hover{
+.container-newslatter {
+    max-width: 600px;
+    margin: 20px auto;
     background-color: #fff;
-}
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-#radio5:checked ~ .first{
-    margin-left: -100%;
-}
-.navigation-auto div{ 
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff;
-}
-#radio5:checked ~ .navigation-auto .auto-btn5{
-    background-color: #fff;
-}
-
-
-.newslatter {
-    max-width: 100%;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
   }
   
-  h2 {
-    text-align: left;
+  h2{
+    text-align: center;
+    padding: 3px;
+    font-size: 35px;
+    
+  }
+  p{
+    text-align: center;
+    padding: 3px;
+    font-size: 25px;
+    margin: 25px;
+  }
+ 
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
   }
   
-  .form-group {
-    margin-bottom: 20px;
-    justify-content: right;
-  }
-  
-  .form-group label {
-    display: block;
-    font-weight: bold;
-  }
-  
-  .form-group input[type="email"] {
-    width: 30%;
+  .newsletter-input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    position: relative;
+    margin-bottom: 10px;
   }
   
-  .form-group input[type="submit"] {
-    width: 15%;
+  .newsletter-button {
     padding: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    position: absolute;
   }

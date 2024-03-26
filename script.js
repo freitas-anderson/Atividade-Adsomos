@@ -14,3 +14,20 @@ function submitForm() {
 
     console.log("Termo de pesquisa enviado: " + searchTerm);
   }
+
+  const box = document.querySelector(".container");
+  const imagens = ducument.querySelectorAll(".container img");
+
+  let contador = 0;
+
+  function slider() {
+    contador++;
+
+    if (contador > imagens.length - 1){
+        contador = 0; 
+        
+    }
+
+    box.style.transform = `translateX(${-contador * 800}px)`;
+  }
+  setInterval(slider, 2000);
