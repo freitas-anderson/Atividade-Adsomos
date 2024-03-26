@@ -296,7 +296,7 @@ header {
   }
   
   .product {
-    width: calc(25% - 10px); /* Define a largura dos elementos */
+    width: calc(30% - 20px); /* Define a largura dos elementos */
     background-color: #f9f9f9;
     border-radius: 5px;
     padding: 20px;
