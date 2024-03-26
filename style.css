@@ -225,6 +225,7 @@ header {
 }
 
 .container-newslatter {
+    
     max-width: 600px;
     margin: 20px auto;
     background-color: #fff;
@@ -268,4 +269,56 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .page-product {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+    justify-content: center; /* Alinha os elementos horizontalmente */
+    gap: 0px; /* Espaçamento entre os elementos */
+  }
+  
+  .product {
+    width: calc(20% - 20px); /* Define a largura dos elementos */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    max-width: 150px; /* Largura máxima da imagem */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Centraliza a imagem verticalmente e adiciona margem na parte inferior */
+  }
+  
+  .product p {
+    margin: 0;
+  }
+  
+  .produc-name {
+    font-weight: bold;
+  }
+  
+  .rate {
+    color: gold;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para telas menores */
+  @media screen and (max-width: 768px) {
+    .page-product {
+      flex-direction: column; /* Altera a direção do flex container para coluna */
+      align-items: center; /* Alinha os elementos verticalmente */
+    }
+  
+    .product {
+      width: calc(50% - 20px); /* Reduz a largura dos elementos para duas colunas */
+    }
   }
