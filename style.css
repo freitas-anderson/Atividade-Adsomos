@@ -218,7 +218,7 @@ header {
 
     
 }
-@medi screen and (max-width: 768px;){
+@media screen and (max-width: 768px;){
     .carossel{
         max-width: 90%;
     }
@@ -296,7 +296,7 @@ header {
   }
   
   .product {
-    width: calc(15% - 10px); /* Define a largura dos elementos */
+    width: calc(25% - 10px); /* Define a largura dos elementos */
     background-color: #f9f9f9;
     border-radius: 5px;
     padding: 20px;
@@ -344,7 +344,7 @@ header {
   .about{
     border: black solid 2px;
     border-radius: 10px;
-    margin:120px;
+    margin: 120px 40px 120px;
   }
   .about h3{
     text-align: center;
@@ -354,4 +354,12 @@ header {
   .about p{
     text-align: center;
     margin-bottom: 60px;
+  }
+  @media screen and (max-width: 768){
+    .about h3{
+        font-size: 20px;
+    }
+    .about p{
+        font-size: 14px;
+    }
   }
