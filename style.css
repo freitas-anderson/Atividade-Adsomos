@@ -275,7 +275,7 @@ header {
     display: flex;
     flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
     justify-content: center; /* Alinha os elementos horizontalmente */
-    gap: 0px; /* Espaçamento entre os elementos */
+    gap: 30px; /* Espaçamento entre os elementos */
   }
   
   .product {
