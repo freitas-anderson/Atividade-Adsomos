@@ -267,7 +267,7 @@ header {
 }
 @media screen and (max-width: 768px) {
     .newsletter-button {
-        width: 20%; 
+        width: 50%; 
     }
 }
 
