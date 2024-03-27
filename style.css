@@ -252,38 +252,40 @@ header {
   
 .container-newslatter {
     margin-top: 120px;
-    text-align: center; /* Centraliza o conteúdo */
+    text-align: center;
 }
 
 .newsletter-form {
-    margin-top: 20px; /* Adiciona um espaço superior */
+    margin-top: 20px;
 }
 
 .newsletter-input {
-    width: 90%; /* Ocupa toda a largura disponível */
-    padding: 10px; /* Adiciona preenchimento interno */
-    margin-bottom: 10px; /* Adiciona um espaço inferior */
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.newsletter-button {
-    width: 20%; /* Ocupa toda a largura disponível */
-    padding: 10px; /* Adiciona preenchimento interno */
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto do botão */
-    border: none; /* Remove a borda do botão */
-    cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse sobre o botão */
+.newsletter-button{
+    width: 20%; 
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
 }
 
-/* Estilos para telas menores que 768px (tablets e smartphones na vertical) */
+
+
 @media screen and (max-width: 768px) {
     .newsletter-input {
         width: 90%;
-        /* Ocupa toda a largura disponível */
+       
     }
 }
 @media screen and (max-width: 768px) {
     .newsletter-button {
-        width: 20%; /* Ocupa toda a largura disponível */
+        width: 20%; 
     }
 }
 
@@ -291,14 +293,14 @@ header {
   .page-product {
     margin: 120px;
     display: flex;
-    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
-    justify-content: center; /* Alinha os elementos horizontalmente */
-    gap: 30px; /* Espaçamento entre os elementos */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
   
   .product {
-    width: calc(50% - 80px); /* Define a largura dos elementos */
-    background-color: #ffffff
+    width: calc(50% - 80px);
+    background-color: #ffffff;
     border-radius: 5px;
     padding: 15px;
     text-align: center;
@@ -306,10 +308,10 @@ header {
   
   .product img {
     width: 100%;
-    max-width: 150px; /* Largura máxima da imagem */
+    max-width: 150px;
     height: auto;
     display: block;
-    margin: 0 auto 5px; /* Centraliza a imagem verticalmente e adiciona margem na parte inferior */
+    margin: 0 auto 5px; 
   }
   
   .product p {
@@ -329,16 +331,16 @@ header {
     font-weight: bold;
   }
   
-  /* Estilos para telas menores */
+ 
   @media screen and (max-width: 768px) {
     .page-product {
-      flex-direction: column; /* Altera a direção do flex container para coluna */
+      flex-direction: column; 
       align-items: center;
-      margin: 5%; /* Alinha os elementos verticalmente */
+      margin: 5% /* Alinha os elementos verticalmente */
     }
   
     .product {
-      width: calc(50% - 20px); /* Reduz a largura dos elementos para duas colunas */
+      width: calc(50% - 20px);
     }
     .product-name, .product-pric,  .rate{
         font-size: 14px;
@@ -371,22 +373,25 @@ header {
   }
  
   footer {
-    background-color: #797777;
+    background-color: #000000;
     padding: 20px 0;
     text-align: center;
+    border: #ffffff solid 2px;
+    border-radius: 8px;
 }
 
 .footer-content {
     display: flex;
-    flex-wrap: wrap; /* Permitir que os itens do footer quebrem para a próxima linha em telas menores */
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+   
 }
 
 .footer-location {
+    color: #fff;
     margin-bottom: 20px;
-    padding: 40px 40px 0px 0px;/* Adiciona espaço entre a localização e o menu */
+    padding: 40px 40px 0px 0px;
 }
 
 .footer-location img {
@@ -401,7 +406,7 @@ header {
 
 .footer-list {
     margin: 0 20px;
-    padding: 40px;
+    padding: 40px 40px 0px 0px;
 }
 
 .footer-list li {
@@ -409,7 +414,9 @@ header {
 }
 
 .footer-list h4 {
+    text-transform: uppercase;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .footer-list a {
@@ -418,8 +425,12 @@ header {
 }
 
 .footer-copyrigth {
-    margin-top: 20px; /* Adiciona espaço entre o conteúdo principal e o rodapé */
+    color: #fff;
+    margin-top: 20px;
     font-size: 14px;
+    border-top: #ffffff solid 2px;
+    border-radius: 8px;
+    padding-top: 9px;
 }
 
 
